@@ -10,7 +10,8 @@
     "**/13-app-actions/todo-page-object.js",
     "**/13-app-actions/utils.js",
     "**/17-component-testing/filters.js",
-    "**/17-component-testing/*.jsx"
+    "**/17-component-testing/*.jsx",
+    "**/workshop/**"
   ],
   "baseUrl": "http://localhost:3000",
   "env": {},
