@@ -11,9 +11,11 @@
     "**/13-app-actions/utils.js",
     "**/17-component-testing/filters.js",
     "**/17-component-testing/*.jsx",
-    "**/workshop/**"
+    "**/workshop/**",
+    "**/06-app-data-state/*"
   ],
   "baseUrl": "http://localhost:3000",
   "env": {},
-  "$schema": "https://on.cypress.io/cypress.schema.json"
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "videoCompression": false
 }
