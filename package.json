@@ -38,11 +38,10 @@
   "homepage": "https://github.com/cypress-io/testing-workshop-cypress#readme",
   "devDependencies": {
     "@babel/plugin-proposal-do-expressions": "7.5.0",
-    "@cypress/browserify-preprocessor": "2.1.1",
-    "@cypress/code-coverage": "1.10.4",
+    "@cypress/browserify-preprocessor": "3.0.2",
+    "@cypress/code-coverage": "3.9.12",
     "babel-plugin-istanbul": "5.2.0",
     "cypress": "9.5.2",
-    "cypress-dark": "1.8.3",
     "cypress-failed-log": "2.9.5",
     "cypress-pipe": "2.0.0",
     "cypress-xpath": "1.6.2",
