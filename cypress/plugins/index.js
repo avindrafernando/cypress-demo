@@ -99,10 +99,3 @@ module.exports = (on, config) => {
   config.modifyObstructiveCode = false
   return Promise.resolve(config)
 }
-
-// init for cypress-plugin-snapshots
-// const snapshotsPlugin = require('cypress-plugin-snapshots/plugin')
-// module.exports = (on, config) => {
-//   snapshotsPlugin.initPlugin(on, config)
-//   return config
-// }

@@ -3,7 +3,7 @@
 // import React from 'react'
 // import Footer from './Footer'
 // adds custom command "cy.mount"
-import 'cypress-react-unit-test'
+// import 'cypress-react-unit-test'
 // import { filters } from './filters'
 
 beforeEach(() => {
