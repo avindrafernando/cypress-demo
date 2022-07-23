@@ -70,7 +70,7 @@ In `05-xhr/spec.js` test "starts with zero items"
 
 @ul
 
-- start Cypress mock server with `cy.server`
+- spy on specific route with `cy.intercept`
   - should we start mock server _before_ or _after_ `cy.visit`?
 - spy on specific route with `cy.route`
 - save as an alias
@@ -79,15 +79,14 @@ In `05-xhr/spec.js` test "starts with zero items"
 
 @ulend
 
-**tips:** [`cy.server`](https://on.cypress.io/server), [`cy.route`]('https://on.cypress.io/route), [Network requests guide](https://on.cypress.io/network-requests)
+**tips:** [`cy.intercept`]('https://on.cypress.io/intercept), [Network requests guide](https://on.cypress.io/network-requests)
 
 +++
 
 💡 No need to `cy.wait(...).then(...)`. All Cypress commands will be chained automatically.
 
 ```js
-cy.server()
-cy.route('GET', '/todos').as('todos')
+cy.intercept('GET', '/todos').as('todos')
 cy.visit('/')
 cy.wait('@todos')
 // cy.get() will run AFTER cy.wait() finishes

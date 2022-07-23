@@ -34,8 +34,7 @@ it('adds items to store', () => {
 })
 
 it('creates an item with id 1', () => {
-  cy.server()
-  cy.route('POST', '/todos').as('new-item')
+  cy.intercept('POST', '/todos').as('new-item')
   addItem('something')
   cy.wait('@new-item')
     .its('request.body')

@@ -453,7 +453,7 @@ cy.get('li')
 
 ```js
 // spy / stub network calls
-cy.route(...).as('new-item')
+cy.intercept(...).as('new-item')
 cy.wait('@new-item')
   .its('response.body')
   .should('have.length', 2)
